@@ -136,7 +136,7 @@ public class InvestmentsApplicationTests {
         InvestorProduct byProductId = investorProductService.findByProductId(withdrawalRequest.getProductType().getProduct(), dbInvestorDetails.getInvestorId());
         assert byProductId.getInvestorDetails().getInvestorId()==byProductId.getInvestorDetails().getInvestorId();
     }
-
+// other tests could be written similar to the above
     @Test
     public void testProcessWithdrawal() {
         BigDecimal currentBalance = investorProducts.get(1).getCurrentbalance();
